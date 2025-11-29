@@ -1,0 +1,17 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 250px;
+    justify-content: space-evenly;
+    max-width: 350px;
+}
+
+input{
+    padding: 5px;
+
+}
+
+textarea{
+    padding: 5px;
+}

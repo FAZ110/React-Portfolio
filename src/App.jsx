@@ -4,6 +4,7 @@ import Intro from './components/Intro'
 import Skill from './components/skill'
 import SkillsGrid from './components/SkillsGrid'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 import './App.css'
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Navbar/>
       <Intro/>
       <SkillsGrid skills={skills}/>
+      <Contact/>
       <Footer/>
     </>
   )
