@@ -10,29 +10,29 @@ function ProjectCard({project}){
     }
 
     return (
-        <div className="project-card">
+        <div className={`project-card ${isOpen ? 'open' : ''}`}>
             <div className="project-header" onClick={toggleState}>
-                <h3>{project.title}</h3>
-                <p className="short-desc">{project.shortDesc}</p>
+                <div>
+                  <h3>{project.title}</h3>
+                  <p className="short-desc">{project.shortDesc}</p>
+                </div>
 
-                <span className="toggle-icon">
+                <span className="toggle-icon" aria-hidden>
                     {isOpen ? <FaAngleUp/> : <FaAngleDown/>}
                 </span>
             </div>
 
-            {isOpen && (
-                <div className="project-details">
-                    <p>{project.longDesc}</p>
+            { /* accordion content: visible when .open is present */ }
+            <div className="project-details" aria-expanded={isOpen}>
+                <p>{project.longDesc}</p>
 
-                    <div className="tech-list">
-                        **Technologies:** {project.tech.join(', ')}
-                    </div>
-                    <div className="links">
-
-                    </div>
+                <div className="tech-list">
+                    <strong>Technologies:</strong> {project.tech.join(', ')}
                 </div>
-
-            )}
+                <div className="links">
+                    {/* place links/buttons here */}
+                </div>
+            </div>
 
         </div>
     );

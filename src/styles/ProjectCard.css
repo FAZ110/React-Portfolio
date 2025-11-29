@@ -1,0 +1,89 @@
+.project-card{
+    /* background: #fff; */
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    width: 100%;
+    border: 1px solid #b2acac;
+    margin-bottom: 15px;
+}
+
+.project-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+
+.project-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.project-header > div { flex: 1; }
+
+.project-header h3{
+    margin: 0;
+    font-size: 1.05rem;
+    color: #111;
+}
+
+.short-desc{
+    margin: 6px 0 0 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* toggle icon rotation handled by .open class */
+.toggle-icon{
+    font-size: 1.25rem;
+    color: #333;
+    transition: transform 260ms ease;
+}
+
+/* accordion animation using max-height and opacity */
+.project-details{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 360ms ease, opacity 280ms ease, padding 220ms ease;
+    padding: 0;
+    margin-top: 0;
+}
+
+.project-card.open .project-details{
+    max-height: 420px; /* large enough for content */
+    opacity: 1;
+    padding: 12px 0 0;
+    margin-top: 8px;
+}
+
+.project-card.open .toggle-icon{
+    transform: rotate(180deg);
+}
+
+.tech-list{
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #666;
+    background: rgba(0,0,0,0.02);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.links{
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* small tweaks */
+@media (max-width: 700px){
+    .project-header { align-items: flex-start; }
+    .toggle-icon { margin-top: 6px; }
+}

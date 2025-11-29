@@ -39,8 +39,8 @@ function App() {
       id: 1,
       title: 'E-commerce Platform',
       shortDesc: 'A full-stack shopping cart application built with MERN.',
-      longDesc: 'Implemented user authentication, product filtering, payment gateway integration (Stripe), and admin dashboards for inventory management.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe']
+      longDesc: 'Implemented user authentication',
+      tech: ['React', 'Node.js', 'MongoDB']
     },
     {
       id: 2,
