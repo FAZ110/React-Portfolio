@@ -13,7 +13,6 @@ nav{
     transition: 0.9s ease-in-out;
 }
 
-/* reset default body margin so centering lines up exactly */
 body {
   margin: 0;
 }
