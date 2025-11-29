@@ -1,0 +1,25 @@
+nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: black;
+    top: 0;
+    width: 50%;
+    margin: 0 auto;          /* center the nav horizontally */
+    position: absolute;         /* keep it at the top (or use static if not wanted) */
+    left: 0; right: 0;       /* ensures margin:auto centers when fixed */
+    border-radius: 0 0 10px 10px;
+    padding: 5px;  
+    transition: 0.9s ease-in-out;
+}
+
+/* reset default body margin so centering lines up exactly */
+body {
+  margin: 0;
+}
+
+span{
+    color: rgb(207, 193, 173);
+}
+
+

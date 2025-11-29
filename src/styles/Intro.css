@@ -1,0 +1,43 @@
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    position: absolute;
+    top: 50px;
+    margin-left: 50px;
+
+}
+
+.message{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.role-text{
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cursor{
+    animation: blink 1s infinite;
+    /* color: #333; */
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50%{
+        opacity: 1;
+    }
+    51%, 100%{
+        opacity: 0;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .message {
+        font-size: 1.5rem;
+    }
+}
