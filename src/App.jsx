@@ -5,6 +5,7 @@ import Skill from './components/skill'
 import SkillsGrid from './components/SkillsGrid'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import Projects from './components/Projects'
 import './App.css'
 
 function App() {
@@ -32,11 +33,30 @@ function App() {
     }
   ]
 
+  // In App.js (Example Data)
+  const projectData = [
+    {
+      id: 1,
+      title: 'E-commerce Platform',
+      shortDesc: 'A full-stack shopping cart application built with MERN.',
+      longDesc: 'Implemented user authentication, product filtering, payment gateway integration (Stripe), and admin dashboards for inventory management.',
+      tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe']
+    },
+    {
+      id: 2,
+      title: 'Task Manager App',
+      shortDesc: 'A simple to-do list manager using local storage.',
+      longDesc: 'Developed a user interface for creating, editing, and deleting tasks. Features persistent data storage using the browser\'s localStorage API.',
+      tech: ['React', 'CSS Modules', 'Local Storage']
+    }
+  ];
+
 
   return (
     <>
       <Navbar/>
       <Intro/>
+      <Projects projectsData={projectData}/>
       <SkillsGrid skills={skills}/>
       <Contact/>
       <Footer/>
