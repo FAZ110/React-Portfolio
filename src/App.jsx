@@ -37,17 +37,17 @@ function App() {
   const projectData = [
     {
       id: 1,
-      title: 'E-commerce Platform',
-      shortDesc: 'A full-stack shopping cart application built with MERN.',
-      longDesc: 'Implemented user authentication',
-      tech: ['React', 'Node.js', 'MongoDB']
+      title: 'Darwin Simulation',
+      shortDesc: 'An app to simulate the animals survival on the map',
+      longDesc: 'Implemented in Java, every simulation depends on starting parameters like initial animals count, grass spawn rate, map width and height',
+      tech: ['Java', 'JavaFX']
     },
     {
       id: 2,
-      title: 'Task Manager App',
-      shortDesc: 'A simple to-do list manager using local storage.',
-      longDesc: 'Developed a user interface for creating, editing, and deleting tasks. Features persistent data storage using the browser\'s localStorage API.',
-      tech: ['React', 'CSS Modules', 'Local Storage']
+      title: 'DevEvents',
+      shortDesc: 'A simple app to track upcoming tech events',
+      longDesc: 'Developed a user interface checking the upcoming events and their details, also every event has its own dedicated eventDetails page with more information.',
+      tech: ['NextJS', 'tailwindCSS', 'MongoDB']
     }
   ];
 

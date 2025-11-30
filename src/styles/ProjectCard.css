@@ -3,7 +3,6 @@
     border-radius: 12px;
     padding: 16px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.07);
-    border: 1px solid rgba(0,0,0,0.06);
     transition: transform 180ms ease, box-shadow 180ms ease;
     width: 100%;
     border: 1px solid #b2acac;
@@ -29,7 +28,7 @@
 .project-header h3{
     margin: 0;
     font-size: 1.05rem;
-    color: #111;
+    color: #111111e8;
 }
 
 .short-desc{
