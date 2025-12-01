@@ -6,6 +6,7 @@ import SkillsGrid from './components/SkillsGrid'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+import About from './components/About'
 import './App.css'
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
     <>
       <Navbar/>
       <Intro/>
+      <About/>
       <Projects projectsData={projectData}/>
       <SkillsGrid skills={skills}/>
       <Contact/>
